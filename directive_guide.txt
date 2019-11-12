@@ -1,0 +1,21 @@
+1-> sudo apt-get install alsa-tools alsa-utils
+2-> pip install --upgrade pip --user
+3-> sudo raspi-config
+
+//MariaDatabase configuration
+1-> sudo apt-get -y install python-mysql.connector
+1.1-> pip install mysql.connector --user
+2-> sudo apt-get install mariadb-server-10.0 python-mysqldb
+3-> sudo apt-get install mariadb-server  (recommended over 2)
+4-> sudo /etc/init.d/mysql status  (checking the status of running server)
+5-> sudo mysql -u root -p -h localhost  (login to marisdb user from root user)
+6-> no password is required for login through root user
+7-> CREATE DATABASE names;
+8-> CREATE USER 'invicta'@'localhost' IDENTIFIED BY 'DRAGONBALL';
+9-> GRANT ALL PRIVILEGES ON names.* TO 'invicta'@'localhost';
+10-> FLUSH PRIVILEGES;
+11-> CREATE TABLE NAMES ( ids INT(100) NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50) );
+12-> STATUS
+
+
+
